@@ -1,0 +1,42 @@
+.intro {
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+.button {
+    margin-top: 60px;
+}
+
+@media (max-width: 1500px) {
+    .nav__item {
+        border-right: none;
+        &::after {
+            content: "";
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .intro {
+        height: 100%;
+        background-color: #294b5e;
+    }
+    .services__buttons {
+        display: flex;
+        overflow: auto;
+        margin-top: 120px;
+        padding-bottom: 100px;
+        & button {
+            min-width: 250px;
+        }
+    }
+    .services__text {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button {
+        margin-top: 30px;
+    }
+}
